@@ -172,13 +172,16 @@ span {
     margin-top: 15px;
 }
 
-.fa-circle-play,
+
 .fa-download {
     color: #F948B2;
     margin-right: 12px;
     font-size: 1.5rem;
 }
-
+.fa-circle-play{
+    margin-right: 12px;
+    font-size: 1.5rem;
+}
 .fa-user-group {
     font-size: 1.5rem;
     margin-right: 12px;
@@ -186,6 +189,125 @@ span {
 }
 
 /* Banner style end */
+/* Feature section style start */
+.videos {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 130px;
+}
+
+.title {
+    text-align: center;
+
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.gradient-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+
+}
+
+.description {
+    color: #534C64;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 16px;
+}
+
+.play-title-color {
+    text-align: right;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    color: #F948B2;
+
+}
+
+.video-cards {
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+}
+
+.video-card {
+    width: 342px;
+    height: 400px;
+}
+
+.video-card img {
+    width: 100%;
+}
+
+.video-card p {
+    color: #534C64;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+}
+.video-card {
+    width: 342px;
+    height: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.content {
+    width: 287px;
+    height: 337px;
+    top: 0;
+    left: 10;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.content:hover {
+    opacity: 1;
+    border: 3px solid #F948B2;
+    border-radius: 15px;
+}
+
+/* Feature section style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive style */
 @media screen and (max-width: 576px) {
     nav {
@@ -214,7 +336,6 @@ span {
     .banner-content {
         width: 90%;
         height: 90%;
-        /* height: 100%; */
         margin: 10px;
     }
 
@@ -243,6 +364,38 @@ span {
 
     .banner-img img {
         width: 100%;
+    }
+    .video-cards {
+
+        flex-direction: column;
+        align-items: center;
+         
+
+    }
+
+    .video-card {
+        /* width: 84%; */
+        /* margin-bottom: 10px; */
+        margin: 10px 0;
+    }
+
+
+    .game-title {
+
+        font-size: 20px;
+
+    }
+
+    .game-title-gradient {
+        font-size: 20px;
+    }
+
+    .game-description {
+        font-size: 10px;
+    }
+    .content {
+        width: 342px;
+        height: 400px;
     }
 
 }
