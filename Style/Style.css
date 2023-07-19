@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary-color {
+    color: #FF42A5;
+}
+
+/* Navbar style start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+}
+
+.nav-option, ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-section h3,
+.special-character {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.nav-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-option a {
+    text-decoration: none;
+}
+
+.nav-option a,
+span {
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.follow-section {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    padding: 16px ;
+    border-radius: 8px;
+}
+
+.nav-option a {
+    margin-right: 30px;
+}
+
+.follow-section span {
+    margin-right: 24px;
+}
+
+.follow-section .fa-brands {
+    margin-right: 16px;
+}
+
+.follow-section img {
+    width: 35px;
+}
+
+.fa-youtube {
+    color: rgba(246, 28, 13, 1);
+    font-size: 2rem;
+}
+/* Navbar style end */
+
+
+
+/* responsive style */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction: column;
+    }
+    .nav-option,
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #special-character {
+        font-size: 3rem;
+    }
+    ul li {
+        margin-top: 20px;
+    }
+    .follow-section {
+        margin-top: 30px;
+    }
+}
