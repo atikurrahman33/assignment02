@@ -100,8 +100,92 @@ span {
 }
 /* Navbar style end */
 
+/* Banner style */
+.banner {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.banner-content {
+    width: 40%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assests/images/Group\ 14.png');
+    background-size: 100%;
+}
 
+.banner-content-text {
+    padding: 50px;
+}
+
+.banner-content-text button {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.signIn-btn {
+    background-color: #FF42A5;
+}
+
+.goRogue-btn {
+    background-color: rgba(78, 197, 247, 1);
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-subtitle {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    font-size: 5.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-content-text p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 15px;
+}
+
+.fa-circle-play,
+.fa-download {
+    color: #F948B2;
+    margin-right: 12px;
+    font-size: 1.5rem;
+}
+
+.fa-user-group {
+    font-size: 1.5rem;
+    margin-right: 12px;
+    color: purple;
+}
+
+/* Banner style end */
 /* responsive style */
 @media screen and (max-width: 576px) {
     nav {
@@ -122,4 +206,43 @@ span {
     .follow-section {
         margin-top: 30px;
     }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        width: 90%;
+        height: 90%;
+        /* height: 100%; */
+        margin: 10px;
+    }
+
+    .banner-content-text h1 {
+        font-size: 3rem;
+    }
+
+    .banner-content-text h2 {
+        font-size: 2rem;
+    }
+
+    .banner-content-text p {
+        font-size: 1rem;
+    }
+
+    .banner-content-text button {
+        font-size: 13px;
+        font-weight: 400;
+        padding: 7px 12px;
+    }
+
+    .banner-img {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .banner-img img {
+        width: 100%;
+    }
+
 }
