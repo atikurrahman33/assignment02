@@ -293,19 +293,103 @@ img {
 
 /* Feature section style end */
 
+/* Footer */
+footer {
+    background-color: #0B0223;
+    color: white;
+    margin-top: 130px;
+}
 
+.footer-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    margin-top: 130px;
+    /* padding: 50px; */
+}
+.brang-logo img{
+    width: 60px;
+}
+.brang-logo{
+    text-align: center;
+}
+.footer-logo img{
+    width: 60px;
+}
 
+.features {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(6, 1fr);
+}
 
+.features p {
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
 
+.social-icons {
+    margin-top: 50px;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+}
 
+.policy {
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 70px;
+    grid-template-columns: repeat(4, 1fr);
+}
 
+.social-icons i {
+    font-size: 40px;
+    color: white;
+}
 
+.policy p,
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+}
 
+.footer-logo {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 20px;
 
+}
 
+.footer-logo img {
+    width: 86.041px;
+    height: 40px;
+    margin-right: 10px;
+}
 
+.footer-logo h3,
+.footer-g, img {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
 
-
+.item{
+    padding: 5px;
+    border-radius: 8px;
+}
+.item:hover{
+    border: 1px solid #F948B2;
+    color: #F948B2;
+}
 
 
 /* responsive style */
@@ -332,70 +416,99 @@ img {
     .banner {
         flex-direction: column-reverse;
     }
-
     .banner-content {
         width: 90%;
         height: 90%;
         margin: 10px;
     }
-
     .banner-content-text h1 {
         font-size: 3rem;
     }
-
     .banner-content-text h2 {
         font-size: 2rem;
     }
-
     .banner-content-text p {
         font-size: 1rem;
     }
-
     .banner-content-text button {
         font-size: 13px;
         font-weight: 400;
         padding: 7px 12px;
     }
-
     .banner-img {
         width: 100%;
         padding: 20px;
     }
-
     .banner-img img {
         width: 100%;
     }
     .video-cards {
-
         flex-direction: column;
         align-items: center;
-         
-
     }
-
     .video-card {
-        /* width: 84%; */
-        /* margin-bottom: 10px; */
         margin: 10px 0;
     }
-
-
     .game-title {
-
         font-size: 20px;
-
     }
-
     .game-title-gradient {
         font-size: 20px;
     }
-
     .game-description {
         font-size: 10px;
     }
     .content {
         width: 342px;
         height: 400px;
+    } .footer-section {
+        padding: 20px;
     }
 
+    .features {
+        gap: 10px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+
+    .features,
+    .social-icons {
+
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icons i {
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .policy {
+        display: grid;
+        gap: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 70px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-logo {
+        width: 70%;
+        margin: 0 auto;
+        align-items: center;
+
+    }
+
+    .footer-logo h3,
+    .footer-g {
+        font-size: 20px;
+    }
+
+    .footer-logo {
+        width: 25px;
+    }
 }
